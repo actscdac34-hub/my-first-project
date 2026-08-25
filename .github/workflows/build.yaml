@@ -1,1 +1,25 @@
-.
+name: my-first-action-CI
+
+on:
+
+  push:
+    branches:
+      - main
+      
+  workflow_dispatch:
+
+jobs:
+    setup:
+      runs-on: [Test_GHA_Linux]
+      steps:
+        - name: printshell1
+          run: |
+            echo "My First Job!!"
+            ls -l
+        - name: printshell2
+          run: |
+            echo "My Second Job!!"
+            ps -ef 
+            git --version
+          
+    
