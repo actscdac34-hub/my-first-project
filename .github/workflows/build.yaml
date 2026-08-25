@@ -19,7 +19,8 @@ jobs:
         - name: printshell2
           run: |
             echo "My Second Job!!"
-            ps -ef 
+            code
             git --version
+            
           
     
